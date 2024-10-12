@@ -19,6 +19,10 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
+  margin: auto 1em;
+  background-image: url(/images/fondo.jpg)  ;
+  background-size: cover;
+  
 }
 
 /* Estilos del encabezado y pie de página */
@@ -29,13 +33,16 @@ header, footer {
 
 /* Estilos de la barra de navegación */
 .navbar {
+  border-radius: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background-color: var(--card-bg-color);
+  border: var(--shadow-color) 1px solid;
   color: var(--text-color);
   position: relative;
+  margin-bottom: 1em;
 }
 
 .nav-links {
@@ -52,15 +59,20 @@ header, footer {
   color: var(--text-color);
   font-size: 18px;
 }
+.nav-links li a:hover{
+  color: #EA3323;
+}
 
 .dropdown {
   position: relative;
+  
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: var(--card-bg-color);
+  border: var(--secondary-text-color) 1px solid;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -179,10 +191,14 @@ header, footer {
       height: 100vh;
       left: 0;
       width: 100%;
-      background-color: #1a1a1a;
+      background-color: #0000009c;
+      backdrop-filter: blur(15px);
       padding: 60px 20px 20px;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.5s ease-in-out;
       z-index: 999;
+  }
+  .nav-links:hover{
+    color: red;
   }
 
   .nav-links.active {
@@ -199,6 +215,7 @@ header, footer {
 
   .close-icon {
       display: none;
+      /* color: transparent; */
   }
 
   .burger.active .menu-icon {
