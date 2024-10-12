@@ -20,7 +20,7 @@ body {
   color: var(--text-color);
   line-height: 1.6;
   margin: auto 1em;
-  background-image: url(/images/fondo.jpg)  ;
+  background-image: url(./images/fondo.jpg)  ;
   background-size: cover;
   
 }
